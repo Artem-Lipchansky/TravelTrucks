@@ -1,0 +1,89 @@
+.bookingForm {
+  width: 288px;
+  padding: 16px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.bookingFormTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: #101828;
+  margin-bottom: 8px;
+}
+.bookingFormText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: #475467;
+  margin-bottom: 24px;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.inputFormBooking {
+  padding: 18px;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 12px;
+  color: #101828;
+  font-size: 16px;
+}
+.inputFormBooking[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+.comment {
+  color: #101828;
+  height: 118px;
+  resize: none;
+}
+.linkCatalog {
+  display: block;
+  width: 166px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 23px;
+  text-decoration: none;
+  background-color: #ff0000;
+  border-radius: 30px;
+  border: none;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-shadow: 1px 2px 1px #0e0e0e;
+}
+.linkCatalog:hover {
+  background-color: #f45858;
+  color: #ffffff;
+  cursor: pointer;
+}
+.error {
+  color: #e44848;
+  font-size: 14px;
+  margin-top: -10px;
+}
+@media screen and (min-width: 768px) {
+  .bookingForm {
+    width: 580px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bookingForm {
+    padding: 44px 57px;
+  }
+  .linkCatalog {
+    padding: 16px 46px;
+  }
+}

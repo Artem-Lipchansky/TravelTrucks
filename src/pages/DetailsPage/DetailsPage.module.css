@@ -1,0 +1,130 @@
+.detailsPageWrapper {
+  padding: 10px;
+  background-color: #fff;
+}
+.wrapper {
+  margin-bottom: 28px;
+}
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.detailsImageItem {
+  list-style-type: none;
+}
+.imgDetails {
+  width: 292px;
+  height: 312px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+.imgDetails:hover {
+  cursor: pointer;
+}
+.detailsDeskr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: #475467;
+  margin-bottom: 60px;
+}
+.linkFeatures {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #101828;
+  margin-right: 40px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.linkReviews {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #101828;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.detailsLinks {
+  margin-bottom: 24px;
+}
+.linkFeatures,
+.linkReviews {
+  position: relative;
+}
+.linkFeatures:hover,
+.linkReviews:hover {
+  color: #f45858;
+}
+.linkFeatures:active:focus,
+.linkReviews:active:focus {
+  color: #101828;
+}
+.linkFeatures.active::after,
+.linkReviews.active::after {
+  width: 85px;
+  height: 3px;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  background-color: #ff0000;
+}
+.line {
+  background-color: #dadde1;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.optionDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .detailsPageWrapper {
+    padding: 12px;
+  }
+  .imageContainer {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .imgDetails {
+    width: 320px;
+    height: 220px;
+  }
+  .detailsDeskr {
+    margin-bottom: 28px;
+  }
+  .optionDetails {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .detailsPageWrapper {
+    padding: 48px 64px;
+  }
+  .imageContainer {
+    gap: 48px;
+  }
+  .line {
+    margin-bottom: 56px;
+  }
+  .optionDetails {
+    flex-direction: row;
+    align-items: normal;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,41 @@
+.navigation {
+  position: relative;
+  padding: 18px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: #ffffff;
+}
+.navHomeLink {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ff0000;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navHomeLink:hover {
+  color: #f44646;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: relative;
+    padding: 28px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: #ffffff;
+  }
+  .navHomeLink {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ff0000;
+    text-decoration: none;
+  }
+  .navHomeLink:hover {
+    color: #f45858;
+  }
+}

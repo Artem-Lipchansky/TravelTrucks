@@ -1,0 +1,75 @@
+.hero {
+  padding: 250px 20px 270px 20px;
+  background-image: url("../../Image/hero-travel.jpg");
+  background-repeat: no-repeat;
+  background-position: left 10%;
+  background-size: cover;
+}
+.titleHero {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: #f7f7f7;
+  margin-bottom: 16px;
+  width: 281px;
+}
+.herosubTitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #f7f7f7;
+  margin-bottom: 40px;
+  width: 281px;
+}
+.linkCatalog {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: #ffffff;
+  padding: 8px 24px;
+  text-decoration: none;
+  background-color: #ee0606;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.linkCatalog:hover {
+  background-color: #f45858;
+  color: #ffffff;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: url("../../Image/hero-travel2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 260px 64px 260px 64px;
+  }
+  .titleHero {
+    font-size: 48px;
+    min-width: max-content;
+  }
+  .herosubTitle {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 260px 64px 260px 64px;
+  }
+  .herosubTitle {
+    min-width: max-content;
+  }
+  .linkCatalog {
+    padding: 16px 46px;
+  }
+}

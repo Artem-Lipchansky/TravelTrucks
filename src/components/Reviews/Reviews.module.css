@@ -1,0 +1,76 @@
+.reviewsWrapper {
+  background-color: #fff;
+  padding: 10px;
+  width: 300px;
+}
+.reviewItem {
+  list-style-type: none;
+}
+.reviewItem:not(:last-child) {
+  margin-bottom: 24px;
+}
+.reviewFirstLetter {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f2f4f7;
+  color: #ff0000;
+}
+.aboutRewiew {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.reviewerName {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: #101828;
+  margin-bottom: 4px;
+}
+.starEmpty {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  fill: #f2f4f7;
+}
+.starFilled {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  fill: #ffc531;
+}
+.reviewContent {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  color: #475467;
+}
+@media screen and (min-width: 768px) {
+  .reviewsWrapper {
+    padding: 20px;
+    width: 580px;
+  }
+  .reviewItem:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviewsWrapper {
+    padding: 20px 30px;
+  }
+  .reviewItem:not(:last-child) {
+    margin-bottom: 44px;
+  }
+}
